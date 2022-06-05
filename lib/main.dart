@@ -206,8 +206,11 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: GestureDetector(
                   onTap: () => setState(() {
+                    if (defendingBodyPart != null &&
+                              attackingBodyPart != null) {
                     defendingBodyPart = null;
                     attackingBodyPart = null;
+                    }
                   }),
                   child: SizedBox(
                     height: 40,
