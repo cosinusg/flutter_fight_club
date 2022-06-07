@@ -355,7 +355,7 @@ class FightersInfo extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              LivesWiget(
+              LivesWidget(
                   overallLivesCount: maxLivesCount,
                   currentLivesCount: yourLivesCount),
               Column(
@@ -409,7 +409,7 @@ class FightersInfo extends StatelessWidget {
                   ),
                 ],
               ),
-              LivesWiget(
+              LivesWidget(
                   overallLivesCount: maxLivesCount,
                   currentLivesCount: enemyLivesCount),
             ],
@@ -420,11 +420,11 @@ class FightersInfo extends StatelessWidget {
   }
 }
 
-class LivesWiget extends StatelessWidget {
+class LivesWidget extends StatelessWidget {
   final int overallLivesCount;
   final int currentLivesCount;
 
-  const LivesWiget(
+  const LivesWidget(
       {Key? key,
       required this.overallLivesCount,
       required this.currentLivesCount})
