@@ -67,6 +67,7 @@ class MyHomePageState extends State<MyHomePage> {
                   child: Center(
                     child: Text(
                       midTextField,
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 10,
                         color: FightClubColors.darkGreyText,
@@ -340,16 +341,12 @@ class FightersInfo extends StatelessWidget {
             children: [
               Expanded(
                   child: ColoredBox(
-                      color: Colors.white,
-                      child: SizedBox(
-                        height: 160,
-                      ))),
+                color: Colors.white,
+              )),
               Expanded(
                   child: ColoredBox(
-                      color: Color(0xFFC5D1EA),
-                      child: SizedBox(
-                        height: 160,
-                      ))),
+                color: Color(0xFFC5D1EA),
+              )),
             ],
           ),
           Row(
@@ -439,34 +436,22 @@ class LivesWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: List.generate(overallLivesCount, (index) {
         if (index < currentLivesCount) {
-          return index != 0
-              ? Padding(
-                  padding: const EdgeInsets.only(top: 4),
+          return Padding(
+                  padding: EdgeInsets.only(top: index != 0 ? 4 : 0),
                   child: Image.asset(
                     FightClubIcons.hearthFull,
                     height: 18,
                     width: 18,
                   ),
-                )
-              : Image.asset(
-                  FightClubIcons.hearthFull,
-                  height: 18,
-                  width: 18,
                 );
         } else {
-          return index != 0
-              ? Padding(
-                  padding: const EdgeInsets.only(top: 4),
+          return Padding(
+                  padding: EdgeInsets.only(top: index != 0 ? 4 : 0),
                   child: Image.asset(
                     FightClubIcons.hearthEmpty,
                     height: 18,
                     width: 18,
                   ),
-                )
-              : Image.asset(
-                  FightClubIcons.hearthEmpty,
-                  height: 18,
-                  width: 18,
                 );
         }
       }),
