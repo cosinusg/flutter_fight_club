@@ -50,6 +50,7 @@ class _MainPageContent extends StatelessWidget {
                     return SizedBox();
                   }
                   return Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Center(
                           child: Text(
