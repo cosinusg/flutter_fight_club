@@ -50,19 +50,19 @@ class _StatisticsPageContent extends StatelessWidget {
                       Text('Won: ${sp.getInt("stats_won") ?? 0}',
                           style: TextStyle(
                             fontSize: 16,
-                            color: FightClubColors.darkGreyText,
+                            color: Color(0xffffffff),
                           )),
                       SizedBox(height: 6,),
                       Text('Lost: ${sp.getInt("stats_lost") ?? 0}',
                           style: TextStyle(
                             fontSize: 16,
-                            color: FightClubColors.darkGreyText,
+                            color: Color(0xffffffff),
                           )),
                       SizedBox(height: 6,),
                       Text('Draw: ${sp.getInt("stats_draw") ?? 0}',
                           style: TextStyle(
                             fontSize: 16,
-                            color: FightClubColors.darkGreyText,
+                            color: Color(0xffffffff),
                           )),
                     ],
                   );
