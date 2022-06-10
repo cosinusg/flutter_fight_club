@@ -59,7 +59,7 @@ class _StatisticsPageContent extends StatelessWidget {
                             color: Color(0xffffffff),
                           )),
                       SizedBox(height: 6,),
-                      Text('Draw: ${sp.getInt("stats_draw") ?? 0}',
+                      Text('draw: ${sp.getInt("stats_draw") ?? 0}',
                           style: TextStyle(
                             fontSize: 16,
                             color: Color(0xffffffff),
